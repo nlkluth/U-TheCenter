@@ -7,7 +7,7 @@ body {
 }
 
 
-#nav ul { clear: both; }
+#nav ul { clear: both; padding: 1%;}
 
 #nav ul li {
 	list-style: none;
@@ -21,18 +21,17 @@ body {
 	#nav ul li a:visited { color: #56bcdb; }
 
 #nav #logo img { 
-	width: 20%;
+	width: 30%;
 	float: left;
 	clear: both;
 }
 
 #nav #tagline {
-	width: 75%;
-	float: left;	
+	width: 70%;
+	float: left;
 }
 
-	
-/*---------- Media Queries for Larger Screens ----------*/
-@media screen and (min-width: 40.5em) {
-
+#content-wrap { 
+	width: 100%;
 }
+

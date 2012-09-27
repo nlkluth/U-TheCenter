@@ -11,7 +11,11 @@
 
 	<title> U The Center </title>
 
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
+	<link rel="stylesheet" type="text/css" href="enhanced.css" media="screen  and (min-width: 40.5em)" />
+	<!--[if (lt IE 9)&(!IEMobile)]>
+	<link rel="stylesheet" type="text/css" href="enhanced.css" />
+	<![endif]-->
 	
 	<link rel="shortcut icon" href="favicon.ico" >
 
@@ -21,7 +25,7 @@
 
 	<!-- Begin Nav -->
 	<div id="nav">
-		<div id="logo"><img src="images/uthecentericon.jpg"></div>
+	<div id="logo"><img src="images/uthecentericon.jpg" /></div>
 		<div id="tagline"><p>Everyone is an Innovator, Researcher, Resource</p></div>
 	
 		<ul>
@@ -29,16 +33,18 @@
 			<li><a href="whatwedo.html">What We Do</a></li>
 			<li><a href="resources.html">Resources</a></li>
 			<li><a href="contactus.html">Contact Us</a></li>
-		</ul>
+		</ul>	
 	</div>
 	<!-- End Nav -->
 	
 	<!-- Begin Content -->
-	<div class="content"></div>
-	<div class="container">Collaboration</div>	 
-	<div class="container">Connections</div>
-	<div class="container">Evolving Portfolio</div>	
-	<div class="container">Community</div>
+	<div id="content-wrap">
+		<div class="content"></div>
+		<div class="container">Collaboration</div>	 
+		<div class="container">Connections</div>
+		<div class="container">Evolving Portfolio</div>	
+		<div class="container">Community</div>
+	</div>
 	<!-- End Content -->
 	
 	<!-- Begin Examples -->
@@ -48,7 +54,7 @@
 		<div class="example?"></div>
 	</div>
 	<!-- End Examples -->
-
+		
       <footer>
 
         <p>&copy; U The Center 2012</p>

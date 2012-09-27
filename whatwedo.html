@@ -11,17 +11,22 @@
 
 	<title> U The Center </title>
 
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
+	<link rel="stylesheet" type="text/css" href="enhanced.css" media="screen  and (min-width: 40.5em)" />
+	<!--[if (lt IE 9)&(!IEMobile)]>
+	<link rel="stylesheet" type="text/css" href="enhanced.css" />
+	<![endif]-->
 	
 	<link rel="shortcut icon" href="favicon.ico" >
 
 </head>
 
 <body>
-
+	
+	<!-- Begin Nav -->
 	<div id="nav">
 	
-	<div id="logo"><a href="index.html"><img src="images/uthecentericon.jpg"></a></div>
+	<div id="logo"><a href="index.html"><img src="images/uthecentericon.jpg"/></a></div>
 	
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -31,10 +36,16 @@
 			<li><a href="contactus.html">Contact Us</a></li>
 		</ul>
 	</div>
-	<div class="content">Our mission is to connect people, create partnerships, inspire new knowledge, and
+	<!-- End Nav -->
+	
+	<!-- Begin Content -->
+	<div id="content-wrap">
+		<div class="content">Our mission is to connect people, create partnerships, inspire new knowledge, and
 							foster lifelong learning.
+		</div>
+		<div class="container"></div>
 	</div>
-	<div class="container"></div>	 
+	<!-- End Content -->	 
 
       <footer>
 
