@@ -22,7 +22,6 @@ textarea {
 
 body {
     font-size: 1em;
-    line-height: 1.4;
 }
 
 ::-moz-selection {
@@ -33,25 +32,6 @@ body {
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
 }
 
 .chromeframe {
@@ -66,33 +46,11 @@ textarea {
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
-
-.row {
-  display: inline-block;
-}
-
-.row .span {
-  float: left;
-  min-height: 1px;
-  width: 30%;
-}
-
-/* ===================
-    ALL: Theme
-   =================== */
-
 
 .footer-container {
    background: black;
    color: white;
 }
-
-/* ==============
-    MOBILE: Menu
-   ============== */
    
 .hero-unit {
   padding: 10px;
@@ -210,7 +168,8 @@ body {
   background-color: #003399 \9;
 }
 
-}btn-primary .caret {
+}
+btn-primary .caret {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
 }
@@ -220,12 +179,7 @@ nav ul {
     padding: 0;
 }
 
-.row { width: 100%; }
-
-  .row .span {
-  }
-
-nav a {
+nav a, h1 a {
     display: block;
     margin-bottom: 10px;
     padding: 15px 0;
@@ -233,263 +187,30 @@ nav a {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    color: #28556b;
+    border-bottom: 5px solid #28556b;
+    background-color: #56bcdb;
 }
 
 nav a:hover,
-nav a:visited {
-    color: #56bcdb;
+nav a:visited, 
+h1 a:hover, 
+h1 a:visited {
+    color: #f1b361;
 }
 
-nav a:hover {
+nav a:hover, h1 a:hover {
     text-decoration: underline;
+}
+.current a, .current a:hover, .current a:visited {
+	text-decoration: none;
+	color: black;
 }
 
 /* ==============
     MOBILE: Main
    ============== */
-
-.main {}
-
-.main article h1 {
-    font-size: 2em;
-}
-
+   
 .footer-container footer {
     color: white;
     padding: 20px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-        padding-bottom: 5px; 
-        border-bottom: 2px solid black; 
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        float: left;
-        border-top: 10px solid #e65e2a;
-        margin: 0 auto;
-    }
-
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%;
-}
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-  .row {
-    background: #f1b361;
-    -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
- }
-  .row .span {
-    float: left;
-    min-height: 1px;
-    margin-left: 3%; 
-}
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow:none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
 }
