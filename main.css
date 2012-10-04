@@ -228,7 +228,7 @@ nav a:hover, h1 a:hover {
 /* ==============
     MOBILE: Main
    ============== */
-   
+
 .footer-container footer {
     color: white;
     padding: 20px 0;
@@ -250,7 +250,18 @@ h1 .block { line-height: 1.2; }
 	font-size: 2em;
 	padding: 2%;
 }
-article { margin-bottom: 20%;  }
-.row { clear: both; }
-section {clear: both; }
-section img {float: left; clear: both; margin-right: 2%;}
+#article { margin-bottom: 20%;  }
+
+.section {}
+.section img {float: left; clear: both; margin-right: 2%;}
+
+.row {  }
+	.span img {float: left; clear: both; width: 15%;}
+h2 { color: #e65e2a; }
+
+#copyright { color: #eee; }
+footer.wrapper ul { 
+	list-style: none;  
+}
+footer.wrapper ul li { display: inline-block; border: 1px solid #eee; padding: 2%; }
+footer.wrapper ul a { color: #eee; text-decoration: none; }
