@@ -91,3 +91,5 @@ footer.wrapper ul {
 	width: 30%; 
 }
 footer.wrapper ul li { border: none; padding: none%; }
+
+form { margin-bottom: 4%; }
