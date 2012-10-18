@@ -22,7 +22,7 @@ textarea {
 
 body {
     font-size: 1em;
-    font-family: helvetica neue;
+    font-family: "Helvetica Neue LT Std- Roman", sans-serif;
     background-image: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/wp-content/themes/tweaker6/images/bgnoise.png);
 }
 
@@ -53,12 +53,20 @@ body {
    background: black;
    color: white;
 }
+
+.footer-container img { 
+	margin-left: 10%;
+	width: 15%;
+}
    
 .hero-unit {
   padding: 10px;
   margin-bottom: 10px;
-  background-image: url(images/lecture_hall.jpg);
+  background-image: url(images/students.jpg);
+  background-repeat: no-repeat;
+	background-position: center top;
   border-bottom: 10px solid black;
+
 }
 
 .hero-unit h1 {
@@ -238,11 +246,7 @@ nav a:hover, h1 a:hover {
 h1 .block { line-height: 1.2; } 
 
 #floater {
-	height: 200px;
-	padding: 20%;
-	color: #eee;
-	font-size: 2em;
-	background-color: #e65e2a;
+	visibility: hidden;
 }
 
 #callout {
@@ -265,3 +269,10 @@ footer.wrapper ul {
 }
 footer.wrapper ul li { display: inline-block; border: 1px solid #eee; padding: 2%; }
 footer.wrapper ul a { color: #eee; text-decoration: none; }
+
+#copyright { padding-left: 40px; }
+
+#page-wrap { 
+	width: 100%; 
+	margin: 0 auto;
+	}
