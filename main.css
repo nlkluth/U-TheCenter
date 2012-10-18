@@ -254,10 +254,10 @@ h1 .block { line-height: 1.2; }
 	font-size: 2em;
 	padding: 2%;
 }
-#article { margin-bottom: 20%;  }
+#article { margin-bottom: 10%;}
 
-.section {}
-.section img {float: left; clear: both; margin-right: 2%;}
+.section { }
+.section img {float: left; margin-right: 2%;}
 
 .row {  }
 	.span img {float: left; clear: both; width: 15%;}
@@ -276,3 +276,26 @@ footer.wrapper ul a { color: #eee; text-decoration: none; }
 	width: 100%; 
 	margin: 0 auto;
 	}
+	
+	
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
