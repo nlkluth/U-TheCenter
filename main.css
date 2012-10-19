@@ -50,22 +50,22 @@ body {
 
 
 .footer-container {
-   background: black;
+   background: #28556b;
    color: white;
 }
 
 .footer-container img { 
-	margin-left: 10%;
+	margin-left: 1%;
 	width: 15%;
 }
    
 .hero-unit {
   padding: 10px;
   margin-bottom: 10px;
-  background-image: url(images/students.jpg);
+  background-image: url(images/studentgrp.jpg);
   background-repeat: no-repeat;
 	background-position: center top;
-  border-bottom: 10px solid black;
+  border-bottom: 7px solid #e65e2a;
 
 }
 
@@ -239,10 +239,10 @@ nav a:hover, h1 a:hover {
 
 .footer-container footer {
     color: white;
-    padding: 20px 0;
+    padding: 20px 7%;
 }
 
-.block { background-color: #e65e2a; color: #eee; }
+.block {  color: white; }
 h1 .block { line-height: 1.2; } 
 
 #floater {
@@ -260,7 +260,7 @@ h1 .block { line-height: 1.2; }
 .section img {float: left; margin-right: 2%;}
 
 .row {  }
-	.span img {float: left; clear: both; width: 15%;}
+	.span img {float: left; clear: both; width: 15%; postion: center top; }
 h2 { color: #e65e2a; }
 
 #copyright { color: #eee; }
@@ -270,7 +270,6 @@ footer.wrapper ul {
 footer.wrapper ul li { display: inline-block; border: 1px solid #eee; padding: 2%; }
 footer.wrapper ul a { color: #eee; text-decoration: none; }
 
-#copyright { padding-left: 40px; }
 
 #page-wrap { 
 	width: 100%; 
@@ -299,3 +298,5 @@ html[xmlns] .clearfix {
 	height: 1%;
 }
 
+
+    .title img {width: 30%; }

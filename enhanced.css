@@ -12,9 +12,8 @@
 
     .title {
         float: left;
-        width: 30%; 
+        width: 40%;
     }
-    .title img { width: 15%; }
    
 
     nav {
@@ -45,7 +44,7 @@
 }
 
 .row {  
-	display: inline-block
+	display: inline-block;
 }
 
 .row .span {
@@ -57,57 +56,67 @@
 
 #article { 
 	clear: both;
-	margin: 0 auto;
+	margin: inherit;
 	padding: 2%; 
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
-	width: 100%;
+	width: inherit;
 	overflow: hidden;
+	
 }
 
-.section {
-	float: left; 
-	margin: 2% 1% 2% 1%;
+.section { 
+	margin: 2% 1% 2% 3%;
 	width: 45%;
 	min-height: 1px;
 }
+
+.section .left { float: left; }
+.section .right {float: right; }
 	.section img {
-		float: none; 
+		float: left; 
 		clear: none; 
 		margin-left: auto; 
 		margin-right: auto;
+		border-right: 1px solid gray;
+		padding-right: 2%;
+		margin-right: 2%;
 	}
 
 .block {  }
 
 #floater {
 	visibility: visible;
-	padding: 2%;
-	background-color: #e65e2a;
+	padding: 2% 2% 2% 0%;
 	clear: both;
 	width: 40%;
 	height: 20%;
-	color: #eee;
+	color: #e65e2a;
 	font-size: 2em;
-	background-color: #e65e2a;
 }
-.span img { width: 30%; }
+.span img { width: 30%; margin-top: -7%; }
 
-footer.wrapper ul { 
-	width: 20%; 
+footer.wrapper ul {  
 	float: right; 
 	margin-right: 2%; 
-	width: 30%; 
+	width: 10%; 
 }
-footer.wrapper ul li { border: none; padding: none%; }
+footer.wrapper ul li { border: none; padding: none; }
 
-.footer-container img { 
+footer.wrapper img { 
 	float: right;
 	width: 32px;
 	margin-top: 10px;
 }
 form { margin-bottom: 4%; }
+
+#callout {
+	text-align: center;
 }
+
+
+}
+
 
 @media screen and (min-width: 70em) {
 	
