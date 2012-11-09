@@ -300,3 +300,9 @@ html[xmlns] .clearfix {
 
 
     .title img {width: 30%; }
+    
+iframe {
+	width: 100%; 
+ 	margin:0 auto; 
+ 	height: 500px;
+}

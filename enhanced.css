@@ -69,6 +69,7 @@
 	margin: 2% 1% 2% 3%;
 	width: 45%;
 	min-height: 1px;
+	vertical-align: top;
 }
 
 .section .left { float: left; }
@@ -87,12 +88,7 @@
 
 #floater {
 	visibility: visible;
-	padding: 2% 2% 2% 0%;
 	clear: both;
-	width: 40%;
-	height: 20%;
-	color: #e65e2a;
-	font-size: 2em;
 }
 .span img { width: 30%; margin-top: -7%; }
 
@@ -113,7 +109,6 @@ form { margin-bottom: 4%; }
 #callout {
 	text-align: center;
 }
-
 
 }
 
