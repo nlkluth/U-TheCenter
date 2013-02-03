@@ -32,7 +32,7 @@
     nav a, h1 a {
     	background: none;
     	border-bottom: 0px;
-    	margin-top: 25px;
+    	margin-top: 120%;
     	border: none;
     }
     h1 a { padding: 0px;  margin-bottom: 0px; }
@@ -115,6 +115,6 @@ form { margin-bottom: 4%; }
 
 @media screen and (min-width: 70em) {
 	
-#page-wrap {
-	width: 90%;	
+#page-wrap, footer .wrapper {
+	width: 1060px;	
 }
