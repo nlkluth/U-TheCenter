@@ -294,13 +294,14 @@ footer.wrapper ul a { color: #eee; text-decoration: none; }
 }
 .partners ul li .partner {  
   vertical-align: middle;
-  margin-left: 4%;
 }
 .partners ul li .big {
   width: 17%;
+  margin-left: 10%;
 }
 .partners ul li .small {
   width: 12%;
+  margin-left: 12%;
 }	
 	
 .clearfix:after {

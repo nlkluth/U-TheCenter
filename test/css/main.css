@@ -1,0 +1,41 @@
+.link-list {
+	list-style: none;
+}
+
+.aside {
+	margin-top: 30px;
+}
+
+.row.full-width {
+  	max-width: 100%; 
+}
+
+footer.row.full-width {
+	padding: 2% 10% 0px 10%;
+	border-top: solid 1px #dddddd;
+	font-size: 14px;
+	background: #f8f8e8;
+}
+
+.partner {
+	width: 70%;
+	margin: 5% auto;
+}
+
+.project img{
+	margin: 0 auto;
+}
+
+.userInfo img {
+	float: left;
+	margin-right: 6%;
+}
+
+.social img {
+	float: left;
+	width: 10%;
+}
+
+.forumDivide {
+	border: 1px solid black;
+}
