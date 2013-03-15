@@ -39,3 +39,8 @@ footer.row.full-width {
 .forumDivide {
 	border: 1px solid black;
 }
+
+.activity-img {
+	width: 21%;
+	float: left;
+}
