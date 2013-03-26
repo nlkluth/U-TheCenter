@@ -94,32 +94,35 @@
 
 	<div class="row">
 		<div class="large-8 columns">
-			<h4><small>System Broadcast</small></h4>
-			<div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate perspiciatis reiciendis ab nisi debitis sunt neque architecto ipsum corporis sapiente eum minus exercitationem molestias velit perferendis pariatur repellat assumenda.</p>
-			</div>
+			<div class="section-container tabs" data-section data-options="deep_linking: true;">
+              <section class="section">
+                <p class="title"><a href="#panel1">Get Started</a></p>
+                <div class="content" data-slug="panel1">
+                	<div class="row"> 
+		      			<div class="large-3 small-3 columns">
+		      				<img src="../img/ideaboard_icon.png">
+		      			</div>
+		      			<div class="large-3 small-3 columns">
+	      					<img src="../img/evolvingportfolio.png">
+		      			</div>
+                  	</div>
+	            </div>
+              </section>
+              <section class="section">
+                <p class="title"><a href="#panel2">Projects</a></p>
+                <div class="content" data-slug="panel2">
+                    <ul class="small-block-grid-2 large-block-grid-2">
+					  <li><img src="../img/ideaboardimg.png"></li>
+					  <li><img src="../img/idboard3.png"></li>
+					  <li><img src="../img/idboard4.png"></li>
+					  <li><img src="../img/idboard2.png"></li>
+					  <li><img src="../img/idboard4.png"></li>
+					  <li><img src="../img/idboard2.png"></li>
+					</ul>
+                </div>
+              </section>
+            </div>	
 
-			<h4>Get Started</h4>
-			<div class="pannel callout">
-				<div class="large-5 columns panel">
-					Create Idea Board 
-				</div>
-				<div class="large-5 columns panel">
-					Upload to Portfolio 
-				</div>
-			</div>
-
-			<hr>
-			
-			<h4 class="subheader">Projects</h4>
-			<div class="panel callout">
-				<ul class="small-block-grid-2 large-block-grid-4">
-				  <li><img src="../img/ideaboardimg.png"></li>
-				  <li><img src="../img/idboard2.png"></li>
-				  <li><img src="../img/idboard3.png"></li>
-				  <li><img src="../img/idboard4.png"></li>
-				</ul>
-			</div>
 		</div>
 		<div class="large-4 columns">
 			<h4 class="subheader">Campus Activity </h4>
@@ -185,6 +188,7 @@
 	</script>
 
 	<!-- Foundation Scripts -->
+    <script src="http://foundation.zurb.com/docs/assets/docs.js"></script>
 	<script>
 	$(document).foundation();
 	</script>
