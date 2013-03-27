@@ -140,20 +140,42 @@
 
 		<div class="large-9 columns">
 			<h1>Title of Project</h1>
-			<h5 class="subheader">Month DD, YYY</h5>
+			<div class="section-container tabs" data-section data-options="deep_linking: true;">
+              <section class="section">
+                <p class="title"><a href="#panel1">Media</a></p>
+                <div class="content" data-slug="panel1">
+					
+					<h5 class="subheader">Month DD, YYY</h5>
 
-			<div class="project panel">
-				<img src="../img/project.jpg">
+					<div class="project panel">
+						<img src="../img/project.jpg">
 
-				<ul class="small-block-grid-2 large-block-grid-4">
-				  <li class="action"><img src="../img/recommend.png"></li>
-				  <li class="action"><img src="../img/like.png"></li>
-				  <li class="action"><img src="../img/download.png"></li>
-				  <li class="action"><img src="../img/comment.png"></li>
-				</ul>
+						<ul class="small-block-grid-2 large-block-grid-4">
+						  <li class="action"><img src="../img/recommend.png"></li>
+						  <li class="action"><img src="../img/like.png"></li>
+						  <li class="action"><img src="../img/download.png"></li>
+						  <li class="action"><img src="../img/comment.png"></li>
+						</ul>
+					</div>
+				</div>
+			  </section>
+			  <section class="section">
+                <p class="title"><a href="#panel2">Project History</a></p>
+                <div class="content" data-slug="panel2">
+					<ul class="link-list">
+						<li><a href="profile.html">Username </a>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						<hr>
+						<li><a href="profile.html">Username </a>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						<hr>
+						<li><a href="profile.html">Username </a>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						<hr>
+						<li><a href="profile.html">Username </a>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+					</ul>
+				</div>
+			  </section>
 			</div>
 
-			<div class="large-8 columns">
+			<div class="large-12 columns">
 				<h6>## Comments</h6>
 				<hr>
 				<div class="comment">
@@ -213,14 +235,6 @@
 				</ul>
 			
 			</div>
-
-			<div class="large-3 columns">
-				<h6>Project History</h6>
-					<p><a href="profile.html">Author</a><br> Title <br> Month, DD YYYY <br><a href="#"> View &rarr;</a></p>
-					<hr>
-					<p><a href="profile.html">Author</a><br> Title <br> Month, DD YYYY <br><a href="#"> View &rarr;</a></p>
-					<hr>
-			</div>
 		</div>
 		
 	</div>
@@ -260,6 +274,7 @@
 	</script>
 
 	<!-- Foundation Scripts -->
+    <script src="http://foundation.zurb.com/docs/assets/docs.js"></script>
 	<script>
 	$(document).foundation();
 	</script>
