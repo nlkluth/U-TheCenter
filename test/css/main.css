@@ -5,15 +5,12 @@
 .aside {
 	margin-top: 30px;
 }
-
 .row.full-width {
   	max-width: 100%; 
 }
 
-footer.row.full-width {
-	padding: 2% 10% 0px 10%;
+footer {
 	border-top: solid 1px #dddddd;
-	font-size: 14px;
 	background: #f8f8e8;
 }
 
