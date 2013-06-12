@@ -1,0 +1,83 @@
+body {
+  font-size: 1em;
+  font-family: "Helvetica Neue LT Std- Roman", sans-serif;
+  background-image: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/wp-content/themes/tweaker6/images/bgnoise.png);
+}
+
+h2, h3 {
+  color: #e65e2a;
+}
+
+nav a, nav a:hover {
+  color: #e65e2a
+}
+
+nav ul {
+  float: right;
+  margin-top: 3em;
+}
+
+nav li {
+  display: inline;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+}
+
+.featurette {
+  font-size: 2em;
+  color: #28556b;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+.callout {
+  padding: 2% 0px;
+  border: 1px solid black;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 0 0 black;
+  -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 0 0 black;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 0 0 black;
+}
+
+.manifesto {
+  padding: 0 2em;
+}
+
+.partners {
+  margin: 3em 0;
+}
+
+footer {
+  background-color: #28556b;
+  margin-top: 15px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer a, footer a:hover, footer a:visited {
+  color: white;
+}
+
+
+@media (min-width: 980px) {
+  .feature-image {
+    border-right: 1px solid gray;
+  }
+
+  iframe {
+    width: 100%;
+    margin:0 auto;
+    height: 500px;
+  }
+}
+
