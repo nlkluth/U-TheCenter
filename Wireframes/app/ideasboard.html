@@ -29,10 +29,10 @@
     <!--[if lt IE 9]>
     	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
- 		
+
  </head>
  <body>
- 	
+
 	<nav class="top-bar">
   		<ul class="title-area">
     		<li class="name">
@@ -42,7 +42,7 @@
   		</ul>
 
   		<section class="top-bar-section">
-    	
+
     	<!-- Left Nav Section -->
 			<ul class="left">
 	        	<li class="divider"></li>
@@ -52,7 +52,7 @@
 			    <li class="divider"></li>
 			    <li><a href="connects.html">Connects</a>
 				<li class="divider"></li>
-				<li><a href="ideasboard.html">Idea Board</a>
+				<li class="active"><a href="ideasboard.html">Idea Board</a>
 	  			<li class="divider"></li>
 	  			<li><a href="messages.html">Messages</a>
 	  			<li class="divider"></li>
@@ -87,102 +87,88 @@
 
 	<div class="row">
 		<div class="large-9 columns large-offset-3">
-			<h1> Username </h1>
+			<h1> IdeaBoard </h1>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="large-3 columns">
-			<img src="../img/profile.png">
-			<hr>
-			<div class="panel">
-				<ul class="link-list">
-					<li><a href="messages.html">My Messages</a></li>
-					<hr>
-					<li>Friends Online</li>
-				</ul>
+
+      <select id='ideasboard-selection'>
+        <option value='all'>All Boards</option>
+        <option value='public-only'>Only Public</option>
+        <option value='my-boards'>Mine</option>
+        <option value='art-201'>Art 201</option>
+        <option value='graphic-design-300'>Graphic Design 300</option>
+      </select>
+
+			<div class="section-container" data-section>
+  				<section class="section">
+    				<p class="title"><a href="#panel1">New</a></p>
+  				</section>
+  				<section class="section">
+    				<p class="title"><a href="#">Group</a></p>
+  				</section>
+  				<section class="section">
+    				<p class="title"><a href="#">Followed</a></p>
+  				</section>
+  				<section class="section">
+    				<p class="title"><a href="#">Popular</a></p>
+  				</section>
+  				<section class="section">
+    				<p class="title"><a href="#">Recommended</a></p>
+  				</section>
+  				<section class="section">
+    				<p class="title"><a href="#">A-Z</a></p>
+  				</section>
+  				<section class="section">
+    				<p class="title"><a href="#">Type</a></p>
+  				</section>
 			</div>
 
 			<div class="panel">
-				<h5>My Tags</h5>
-				<ul class="link-list">
+				<h6>Popular in this list</h6>
+				<ol>
+					<li><a href="tags.html">Web Design</a></li>
+					<li><a href="tags.html">Graphic Design</a></li>
 					<li><a href="tags.html">Music</a></li>
-					<li><a href="tags.html">Other stuff</a></li>
-					<li><a href="tags.html">Plants</a></li>
-				</ul>
+					<li><a href="tags.html">Programming</a></li>
+				</ol>
 			</div>
+
 		</div>
 
-		<div class="large-6 columns">
-			<div class="section-container tabs" data-section data-options="deep_linking: true;">
-              <section class="section">
-                <p class="title"><a href="#panel1">Portfolio</a></p>
-                <div class="content" data-slug="panel1">
-					<ul class="large-block-grid-2">
-					  <li><img src="../img/ideaboardimg.png"></li>
-					  <li><img src="../img/idboard2.png"></li>
-					  <li><img src="../img/idboard3.png"></li>
-					  <li><img src="../img/idboard4.png"></li>
-					</ul>
-					<small><a href="#">See all &rarr;</a></small>
-				</div>
-		      </section>
-		      <section class="section">
-                <p class="title"><a href="#panel2">Tab2</a></p>
-                <div class="content" data-slug="panel2">
-					<ul class="large-block-grid-2">
-				</div>
-		      </section>
-		      <section class="section">
-                <p class="title"><a href="#panel3">Tab3</a></p>
-                <div class="content" data-slug="panel3">
-				</div>
-		      </section>
-			</div>
-				<h5>Feed</h5>
-					<div class="panel">
-						<ul class="link-list social">
-							<li>
-								<img src="../img/forum_icon.png"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-								<p><a href="forum.html">View &rarr;</a></p>
-								<hr>
-							</li>
-							<li>
-								<img src="../img/forum_icon.png"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-								<p><a href="forum.html">View &rarr;</a></p>
-								<hr>
-							</li>
-							<li>
-								<img src="../img/forum_icon.png"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-								<p><a href="forum.html">View &rarr;</a></p>
-								<hr>
-							</li>
-						</ul>
-					</div>
-		</div>
-		
-		<div class="large-3 columns">
+		<div class="large-9 columns">
 
-			<h4 class="subheader">About</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In <a href="#">accusamus</a> illo </p>
-			<hr>
-			<h4 class="subheader">Skills</h4>
-			<ul class="inline-list">
-				<li><a href="tags.html">JavaScript</a></li>
-				<li><a href="tags.html">HTML</a></li>
-				<li><a href="tags.html">Design</a></li>
-				<li><a href="tags.html">3D</a></li>
+			<ul class="small-block-grid-3 large-block-grid-3">
+			  <li><a href="ideatitle.html"><img src="../img/ideaboardimg.png"></a></li>
+			  <li><a href="ideatitle.html"><img src="../img/idboard2.png"></a></li>
+			  <li><a href="ideatitle.html"><img src="../img/idboard3.png"></a></li>
+			  <li><a href="ideatitle.html"><img src="../img/idboard4.png"></a></li>
+			  <li><a href="ideatitle.html"><img src="../img/idboard2.png"></a></li>
+			  <li><a href="ideatitle.html"><img src="../img/idboard3.png"></a></li>
+			  <li><a href="ideatitle.html"><img src="../img/idboard4.png"></a></li>
+			  <li><a href="ideatitle.html"><img src="../img/idboard4.png"></a></li>
+			  <li><a href="ideatitle.html"><img src="../img/idboard2.png"></a></li>
+			  <li><a href="ideatitle.html"><img src="../img/idboard3.png"></a></li>
+			   <li><a href="ideatitle.html"><img src="../img/idboard4.png"></a></li>
+			  <li><a href="ideatitle.html"><img src="../img/idboard2.png"></a></li>
 			</ul>
-			<h4 class="subheader">Friends</h4>
-			<ul class="link-list friendsList">
-				<li><img src="../img/meady.jpg">Monte Eady <small>Graphic Design</small></li>
-				<li><img src="../img/nkluth.jpg">Nathan Kluth <small>Information Science</small></li>
-				<li><img src="../img/nspaeth.jpg">Nathan Spaeth <small>Computer Science</small></li>
+
+			<ul class="pagination">
+			  <li class="arrow unavailable"><a href="">&laquo;</a></li>
+			  <li class="current"><a href="">1</a></li>
+			  <li><a href="">2</a></li>
+			  <li><a href="">3</a></li>
+			  <li><a href="">4</a></li>
+			  <li class="unavailable"><a href="">&hellip;</a></li>
+			  <li><a href="">12</a></li>
+			  <li><a href="">13</a></li>
+			  <li class="arrow"><a href="">&raquo;</a></li>
 			</ul>
 		</div>
-		
 	</div>
-	
+
 	<footer>
 		<div class="row">
 			<div class="large-5 columns">
@@ -194,7 +180,7 @@
 					<li><a href="forum.html">Forum</a></li>
 					<li><a href="connects.html">Connects</a></li>
 					<li><a href="ideasboard.html">Idea Board</a></li>
-					<li><a href="profile.html">Profile</a></li>
+					<li><a href="Portfolio.html">Portfolio</a></li>
 					<li><a href="settings.html">Settings</a></li>
 				</ul>
 			</div>
@@ -202,10 +188,9 @@
 	</footer>
 	<!-- End Footer -->
 
-	<!-- Vendor Scripts -->	
+	<!-- Vendor Scripts -->
 	<script src="../js/vendor/jquery.min.js"></script>
 	<script src="../js/vendor/foundation.min.js"></script>
-	<script src="../js/vendor/zepto.js"></script>
 
 	<!-- Google Scripts -->
 	<script type="text/javascript">
@@ -221,15 +206,6 @@
 	</script>
 
 	<!-- Foundation Scripts -->
-	<!-- Check for Zepto support, load jQuery if necessary -->
-	<script>
-	  document.write('<script src=../js/vendor/'
-	    + ('__proto__' in {} ? 'zepto' : 'jquery')
-	    + '.js><\/script>');
-	</script>
-
-	
-    <script src="http://foundation.zurb.com/docs/assets/docs.js"></script>
 	<script>
 	$(document).foundation();
 	</script>

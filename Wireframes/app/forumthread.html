@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -29,10 +29,10 @@
     <!--[if lt IE 9]>
     	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
- 		
+
  </head>
  <body>
- 	
+
 	<nav class="top-bar">
   		<ul class="title-area">
     		<li class="name">
@@ -42,7 +42,7 @@
   		</ul>
 
   		<section class="top-bar-section">
-    	
+
     	<!-- Left Nav Section -->
 			<ul class="left">
 	        	<li class="divider"></li>
@@ -53,8 +53,6 @@
 			    <li><a href="connects.html">Connects</a>
 				<li class="divider"></li>
 				<li><a href="ideasboard.html">Idea Board</a>
-	  			<li class="divider"></li>
-	  			<li class="active"><a href="messages.html">Messages</a>
 	  			<li class="divider"></li>
 			</ul>
 
@@ -85,49 +83,94 @@
 	</nav>
 	<!-- End Nav -->
 
+	<ul class="breadcrumbs">
+	  <li><a href="home.html">Home</a></li>
+	  <li><a href="forum.html">Forum</a></li>
+	  <li><a href="forumbreakdown.html">Forum Subject</a></li>
+	  <li class="current"><a href="#">Forum Thread</a></li>
+	</ul>
+	<!-- End Breadcrumbs -->
+
 	<div class="row">
 		<div class="large-9 columns large-offset-3">
-			<h1> Messages </h1>
+			<h1> [ForumThread] </h1>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="large-3 columns">
 			<div class="section-container" data-section>
-			  <section class="section">
-			    <p class="title"><a href="#">Inbox</a></p>
-			  </section>
-			  <section class="section">
-			    <p class="title"><a href="#">Sent</a></p>
-			  </section>
-			  <section class="section">
-			    <p class="title"><a href="#">Saved</a></p>
-			  </section>
-			  <section class="section">
-			    <p class="title"><a href="#">Deleted</a></p>
-			  </section>
+  				<section class="section">
+    				<p class="title"><a href="#panel1">All</a></p>
+  				</section>
+  				<section class="section">
+    				<p class="title"><a href="#">Recents</a></p>
+  				</section>
+  				<section class="section">
+    				<p class="title"><a href="#">Watched</a></p>
+  				</section>
 			</div>
-
-			<a class="button expand">Compose</a>
-
 		</div>
 
 		<div class="large-9 columns">
+			<div class="forums">
+
 			<ul class="link-list">
-				<li><strong>Unread Message Title</strong> <small>Unread message body preview ducimus iste sapiente voluptatum inventore....</small></li>
-				<hr>
-				<li>Read Message Title <small>Read message body preview ducimus iste sapiente voluptatum inventore...</small></li>
-				<hr>
-				<li>Read Message Title <small>Read message body preview ducimus iste sapiente voluptatum inventore...</small></li>
-				<hr>
-				<li>Read Message Title <small>Read message body preview ducimus iste sapiente voluptatum inventore...</small></li>
-				<hr>
-				<li>Read Message Title <small>Read message body preview ducimus iste sapiente voluptatum inventore...</small></li>
-				<hr>
-				<li>Read Message Title <small>Read message body preview ducimus iste sapiente voluptatum inventore...</small></li>
-				<hr>
-				<li>Read Message Title <small>Read message body preview ducimus iste sapiente voluptatum inventore...</small></li>
-				<hr>
+				<li class="forumPost">
+					<div class="titleBar">
+						<img src="../img/profileicon.png">
+						<h6><a href="portfolio.html">Username</a></h6>
+						<h6><small>Month DD, YYY at Time </small></h6>
+						<hr>
+					</div>
+					<div class="messageBody">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nulla laudantium dignissimos voluptatibus maiores quasi odio corrupti consectetur labore amet magni dolor suscipit aliquam. Libero ea quisquam possimus voluptatum aliquam?</p>
+					</div>
+				</li>
+				<hr class="forumDivide">
+				<li class="forumPost">
+					<div class="titleBar">
+						<img src="../img/profileicon.png">
+						<h6><a href="portfolio.html">Username</a></h6>
+						<h6><small>Month DD, YYY at Time </small></h6>
+						<hr>
+					</div>
+					<div class="messageBody">
+						<p>Example of a file upload</p>
+						<hr>
+						<p><small>Uploaded file:</small></p>
+						<img src="../img/idboard2.png"><p><small>Info about upload</small></p>
+					</div>
+				</li>
+				<hr class="forumDivide">
+				<li class="forumPost">
+					<div class="titleBar">
+						<img src="../img/profileicon.png">
+						<h6><a href="portfolio.html">Username</a></h6>
+						<h6><small>Month DD, YYY at Time </small></h6>
+						<hr>
+					</div>
+					<div class="messageBody">
+						<p>Example post of linked project. Something similar to @username referencing on twitter; a user can @reference a username or project and have a rich-snippet added to the forum post.</p>
+						<hr>
+						<img src="../img/idboard3.png">
+						<p>Title of Project</p>
+						<p><small>More information about project...</small></p>
+					</div>
+				</li>
+				<hr class="forumDivide">
+				<li class="forumPost">
+					<div class="titleBar">
+						<img src="../img/profileicon.png">
+						<h6><a href="portfolio.html">Username</a></h6>
+						<h6><small>Month DD, YYY at Time </small></h6>
+						<hr>
+					</div>
+					<div class="messageBody">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nulla laudantium dignissimos voluptatibus maiores quasi odio corrupti consectetur labore amet magni dolor suscipit aliquam. Libero ea quisquam possimus voluptatum aliquam?</p>
+					</div>
+				</li>
+				<hr class="forumDivide">
 			</ul>
 
 			<ul class="pagination">
@@ -142,9 +185,10 @@
 			  <li class="arrow"><a href="">&raquo;</a></li>
 			</ul>
 
-		</div>	
+			</div>
+		</div>
 	</div>
-	
+
 	<footer>
 		<div class="row">
 			<div class="large-5 columns">
@@ -156,7 +200,7 @@
 					<li><a href="forum.html">Forum</a></li>
 					<li><a href="connects.html">Connects</a></li>
 					<li><a href="ideasboard.html">Idea Board</a></li>
-					<li><a href="profile.html">Profile</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
 					<li><a href="settings.html">Settings</a></li>
 				</ul>
 			</div>
@@ -164,7 +208,7 @@
 	</footer>
 	<!-- End Footer -->
 
-	<!-- Vendor Scripts -->	
+	<!-- Vendor Scripts -->
 	<script src="../js/vendor/jquery.min.js"></script>
 	<script src="../js/vendor/foundation.min.js"></script>
 

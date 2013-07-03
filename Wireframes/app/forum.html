@@ -29,10 +29,10 @@
     <!--[if lt IE 9]>
     	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
- 		
+
  </head>
  <body>
- 	
+
 	<nav class="top-bar">
   		<ul class="title-area">
     		<li class="name">
@@ -42,15 +42,15 @@
   		</ul>
 
   		<section class="top-bar-section">
-    	
+
     	<!-- Left Nav Section -->
 			<ul class="left">
 	        	<li class="divider"></li>
 	        	<li><a href="home.html">Home</a></li>
 	      		<li class="divider"></li>
-			    <li><a href="forum.html">Forum</a></li>
+			    <li class="active"><a href="forum.html">Forum</a></li>
 			    <li class="divider"></li>
-			    <li class="active"><a href="connects.html">Connects</a>
+			    <li><a href="connects.html">Connects</a>
 				<li class="divider"></li>
 				<li><a href="ideasboard.html">Idea Board</a>
 	  			<li class="divider"></li>
@@ -87,67 +87,86 @@
 
 	<div class="row">
 		<div class="large-9 columns large-offset-3">
-			<h1> Connections </h1>
+			<h1> Forum </h1>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="large-3 columns">
-	        <div>	
-	        	<input type="text">
-  				<a href="#" class="alert button">Search</a>
-			</div>
 			<div class="section-container" data-section>
-			  <section class="section">
-			    <p class="title"><a href="#">Sort A-Z</a></p>
-			  </section>
-			  <section class="section">
-			    <p class="title"><a href="#">Sort 2</a></p>
-			  </section>
-			  <section class="section">
-			    <p class="title"><a href="#">Sort 3</a></p>
-			  </section>
-			  <section class="section">
-			    <p class="title"><a href="#">Sort 4</a></p>
-			  </section>
+  				<section class="section">
+    				<p class="title"><a href="#panel1">All</a></p>
+  				</section>
+  				<section class="section">
+    				<p class="title"><a href="#">Recents</a></p>
+  				</section>
+  				<section class="section">
+    				<p class="title"><a href="#">Watched</a></p>
+  				</section>
 			</div>
-			<hr>
-
-			<a href="#" class="button expand">Add new contact</a>
 		</div>
 
 		<div class="large-9 columns">
-			<div class="panel">
-				<ul class="small-block-grid-2 large-block-grid-4">
-				  <li><img src="../img/meady.jpg">Monte Eady <br> <small>Graphic Design</small></li>
-				  <li><img src="../img/nkluth.jpg">Nathan Kluth <br> <small>Information Science</small></li>
-				  <li><img src="../img/nspaeth.jpg">Nathan Spaeth <br> <small>Computer Science</small></li>
-				  <li><img src="../img/meady.jpg">Monte Eady <br> <small>Graphic Design</small></li>
-				  <li><img src="../img/nkluth.jpg">Nathan Kluth <br> <small>Information Science</small></li>
-				  <li><img src="../img/nspaeth.jpg">Nathan Spaeth <br> <small>Computer Science</small></li>
-				 <li><img src="../img/meady.jpg">Monte Eady <br> <small>Graphic Design</small></li>
-				  <li><img src="../img/nkluth.jpg">Nathan Kluth <br> <small>Information Science</small></li>
-				  <li><img src="../img/nspaeth.jpg">Nathan Spaeth <br> <small>Computer Science</small></li>
-				  <li><img src="../img/meady.jpg">Monte Eady <br> <small>Graphic Design</small></li>
-				  <li><img src="../img/nkluth.jpg">Nathan Kluth <br> <small>Information Science</small></li>
-				  <li><img src="../img/nspaeth.jpg">Nathan Spaeth <br> <small>Computer Science</small></li>
-				</ul>
+			<div class="forums">
 
-				<ul class="pagination">
-				  <li class="arrow unavailable"><a href="">&laquo;</a></li>
-				  <li class="current"><a href="">1</a></li>
-				  <li><a href="">2</a></li>
-				  <li><a href="">3</a></li>
-				  <li><a href="">4</a></li>
-				  <li class="unavailable"><a href="">&hellip;</a></li>
-				  <li><a href="">12</a></li>
-				  <li><a href="">13</a></li>
-				  <li class="arrow"><a href="">&raquo;</a></li>
-				</ul>
+			<!-- *****
+			***************
+			I HATE TABLES! CHANGE THIS LATER
+			***************
+			*******-->
+			<table>
+			  <thead>
+			    <tr>
+			      <th width="50"></th>
+			      <th width="300">Forum</th>
+			      <th width="50">Topics</th>
+			      <th width="50">Replies</th>
+			      <th width="50">Last Post</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td><img src="../img/ideaboard_icon.png"></td>
+			      <td><a href="forumbreakdown.html"><strong>Art </strong>All art mediums discussed in this section</a></td>
+			      <td>3</td>
+			      <td>4</td>
+			      <td>Persons Name Month DD, YYYY</td>
+			    </tr>
+			    <tr>
+			      <td><img src="../img/campusconnects_logo.png"></td>
+			      <td><a href="forumbreakdown.html"><strong>Science </strong> Physical and natural sciences</a></td>
+			      <td>6</td>
+			      <td>2</td>
+			      <td>Persons Name Month DD, YYYY</td>
+			    </tr>
+			    <tr>
+			      <td><img src="../img/forum_icon.png"></td>
+			      <td><a href="forumbreakdown.html"><strong>Engineering </strong> Computer and Mathmatical Engineering</a></td>
+			      <td>2</td>
+			      <td>12</td>
+			      <td>Persons Name Month DD, YYYY</td>
+			    </tr>
+			    <tr>
+			      <td><img src="../img/ideaboard_icon.png"></td>
+			      <td><a href="forumbreakdown.html"><strong>Business </strong> Entrepreneurs and go-getters</a></td>
+			      <td>3</td>
+			      <td>14</td>
+			      <td>Persons Name Month DD, YYYY</td>
+			    </tr>
+			    <tr>
+			      <td><img src="../img/forum_icon.png"></td>
+			      <td><a href="forumbreakdown.html"><strong>Humanaties &amp; Social Sciences</strong> Creating a better world</a></td>
+			      <td>7</td>
+			      <td>3</td>
+			      <td>Persons Name Month DD, YYYY</td>
+			    </tr>
+			  </tbody>
+			</table>
+
 			</div>
 		</div>
 	</div>
-	
+
 	<footer>
 		<div class="row">
 			<div class="large-5 columns">
@@ -159,7 +178,7 @@
 					<li><a href="forum.html">Forum</a></li>
 					<li><a href="connects.html">Connects</a></li>
 					<li><a href="ideasboard.html">Idea Board</a></li>
-					<li><a href="profile.html">Profile</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
 					<li><a href="settings.html">Settings</a></li>
 				</ul>
 			</div>
@@ -167,7 +186,7 @@
 	</footer>
 	<!-- End Footer -->
 
-	<!-- Vendor Scripts -->	
+	<!-- Vendor Scripts -->
 	<script src="../js/vendor/jquery.min.js"></script>
 	<script src="../js/vendor/foundation.min.js"></script>
 

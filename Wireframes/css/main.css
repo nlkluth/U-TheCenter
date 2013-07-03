@@ -6,7 +6,7 @@
 	margin-top: 30px;
 }
 .row.full-width {
-  	max-width: 100%; 
+  	max-width: 100%;
 }
 
 footer {
@@ -40,4 +40,8 @@ footer {
 .activity-img {
 	width: 21%;
 	float: left;
+}
+
+select {
+  margin-bottom: 20px;
 }
